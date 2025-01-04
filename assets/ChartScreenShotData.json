@@ -1,0 +1,21 @@
+{
+  "headline": "Production Down Time in Minutes",
+  "data": {
+    "Line Q7V": {
+      "Monday": 11,
+      "Tuesday": 19,
+      "Wednesday": 3,
+      "Thursday": 5,
+      "Friday": 2,
+      "Saturday": 3
+    },
+    "Line CX9": {
+      "Monday": 9,
+      "Tuesday": 10,
+      "Wednesday": 15,
+      "Thursday": 20,
+      "Friday": 25,
+      "Saturday": 30
+    }
+  }
+}

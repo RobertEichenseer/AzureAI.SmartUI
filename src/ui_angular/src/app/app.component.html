@@ -1,0 +1,48 @@
+<style>
+</style>
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <div class="horizontal-container">
+        <img class="app-logo" src="logo.png" alt="logo">
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="vertical-container">
+        <div class="horizontal-container">
+          <button class="pill" (click)="onGetData()" (mouseenter)="showActivityDetail('Create')" (mouseleave)="clearActivityDetail()">(1) Create </button>
+          <button class="pill" (click)="onTakeScreenshot()" (mouseenter)="showActivityDetail('Screenshot')" (mouseleave)="clearActivityDetail()">(2) Screenshot</button>
+          <button class="pill" (click)="onExtractScreenshotData()" (mouseenter)="showActivityDetail('Extract')" (mouseleave)="clearActivityDetail()">(3) Extract </button>
+        </div>
+        <div #ActivityDetail class="details" >{{ activityDetailText }}</div>
+      </div>
+    </div>
+    
+    <div class="divider" role="separator" aria-label="Divider"></div>
+
+    <div class="right-side"> 
+      <p>Status & Response </p>
+      <textarea #responseTextArea class="wide-textbox conversation-box" [value]="serverResponse" readonly tabindex="-1"></textarea>
+      <div class="horizontal-container" >
+        <button class="pill" (mouseenter)="showUserPrompt('Explain')" >Explain </button>
+        <button class="pill" (mouseenter)="showUserPrompt('Downtime')" >Downtime</button>
+        <button class="pill" (mouseenter)="showUserPrompt('XLS')" >Excel</button>
+      </div>
+      <div class="horizontal-container">
+        <textarea class="wide-textbox input-box" [(ngModel)]="userPrompt"></textarea>
+        <img (click)="onGetResponseStream()" class="image-post" title="Send (Stream Response)" src="icon_collection_small.png" alt="image-crop">
+      </div>
+      <div class="horizontal-container">
+        <img #imageChart class="image-chart" title="chart screenshot available" src="icon_collection_small.png" alt="image-chart">
+        <img #imageXls class="image-xls" title="excel file available" src="icon_collection_small.png" alt="image-camera">
+      </div>
+    </div>
+  </div>
+</main>
+
+<main class="main">
+  <div class="content">
+      <canvas id="canvas" class="chart-canvas">{{chart}}</canvas>
+  </div>
+</main>
+<router-outlet />

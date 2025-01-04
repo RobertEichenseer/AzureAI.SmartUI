@@ -1,2 +1,2 @@
-# AzureAI.SmartUI
-Chat with your legacy UI
+# FTA.AI.ImportExport
+AI supported Excel import - export

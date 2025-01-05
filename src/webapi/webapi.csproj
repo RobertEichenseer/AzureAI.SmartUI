@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\shared\import_export.csproj" />
+    <ProjectReference Include="..\smart_ui\smart_ui.csproj" />
   </ItemGroup>
 
 </Project>

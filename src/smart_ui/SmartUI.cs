@@ -116,19 +116,6 @@ public class SmartUI
         {
             yield return token.Content??"";
         }
-
-        // ChatMessageContent chatMessageContent = await _chatCompletionService.GetChatMessageContentAsync(
-        //     chatHistory: chatHistory,
-        //     kernel: _kernel
-        // );
-
-        // if (chatMessageContent.Content == null)
-        // {
-        //     return "";
-        // } else {
-        //     return chatMessageContent.Content;
-        // }
-        
     }
 
 

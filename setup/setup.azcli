@@ -126,3 +126,13 @@ Set-ConfigurationFileVariable $configurationFile "AOAI_CHATCOMPLETION_DEPLOYMENT
 Set-ConfigurationFileVariable $configurationFile "STORAGE_CONNECTION_STRING" $storageAccountConnectionString
 Set-ConfigurationFileVariable $configurationFile "STORAGE_CONTAINER_NAME" $storageContainerName
 Write-Host "Configuration file created at: $configurationFile"
+
+# Start Angular App
+cd ./src/ui_angular
+npm install
+ng serve
+
+# In a NEW TERMINAL WINDOW start the webapi
+# or press F5 in Visual Studio Code
+SETX ASPNETCORE_URLS "http://localhost:5225"
+cd ./src/

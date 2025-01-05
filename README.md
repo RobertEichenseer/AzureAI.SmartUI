@@ -25,7 +25,7 @@ The sample application within this repository simulates a legacy application tha
 The "Chat with your UI" functionality is implemented by:
 
 1) **Extracting information** shown in the bar chart by taking a screenshot and using a multi-modal LLM (OpenAI GPT-4o) to extract information. The extracted information is provided as a JSON object. ![flow01](media/img/flow_01.png)
-2) The extracted JSON information is **used to ground user questions** and to export the data to an Excel spreed sheet. ![flow02](media/img/flow_02.png)
+2) The extracted JSON information is **used to ground user questions** and to export the data to an Excel spread sheet. ![flow02](media/img/flow_02.png)
 
 ### Application
 
@@ -96,7 +96,7 @@ The repo contains the following projects:
 
 ## Summary
 
-This repository demonstrates the integration of AI into legacy applications to enhance user interfaces and interactions. The sample application showcases a "Chat with your UI" functionality, where GPT-4o is used to extract data from a screenshot of a bar chart. 
+This repository demonstrates the integration of AI into legacy applications to enhance user interfaces and interactions. The sample application showcases a "Chat with your UI" functionality, where GPT-4o is used to extract data from a screenshot of a bar chart.
 
 Additionally, Azure AI offers various other services such as [Azure AI Content Understanding](https://azure.microsoft.com/en-us/products/ai-services/ai-content-understanding?msockid=0aec1c5731de617d2576095d30a160c2), [Azure AI Document Intelligence)(https://azure.microsoft.com/en-us/products/ai-services/ai-document-intelligence?msockid=0aec1c5731de617d2576095d30a160c2)... that can be utilized for similar purposes.
 
